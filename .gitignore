@@ -1,0 +1,32 @@
+# 白名單式: 預設排除, 只放行專案交付物。
+# 理由: 這個資料夾常被拿來丟測試資料與截圖, 用「列舉要排除的東西」會漏,
+# 曾因此把含 GNSS 站位的舊版 HTML 與含 email 的截圖推上公開 repo。
+
+# --- 一律排除 ---
+*.html
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.h5
+*.hdf5
+*.tif
+*.tiff
+*.xy
+*.grd
+*.nc
+*.zip
+*.xlsx
+*.csv
+*.geojson
+*.pptx
+*_files/
+output_data/
+__pycache__/
+*.pyc
+*.bak_*
+*.log
+
+# --- 放行的交付物 ---
+!InSAR_Viewer.html
+!docs/*.png

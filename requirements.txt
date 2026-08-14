@@ -1,0 +1,13 @@
+# insar_viewer.py --build (產出單檔 HTML) 只需要標準庫 + numpy
+numpy>=1.20
+
+# gmtsar2h5.py (GMTSAR 散點 → 克利金 HDF5) 需要
+h5py>=3.0
+scipy>=1.5
+shapely>=1.7
+pykrige>=1.6
+gdal>=3.0
+
+# insar_viewer.py 的 CLI 模式 (--ts 把資料烘進 HTML) 另需
+openpyxl>=3.0
+pyproj>=3.0
